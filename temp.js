@@ -1,11 +1,12 @@
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
-  sayHello() {
-    console.log(`Hello, ${this.name}`);
+const obj = {
+  name: 'Alice',
+  age: 30,
+  greeting() {
+    // console.log(`Hello, ${this.name}`);
+    (() => {
+      console.log(this);
+    })()
   }
 }
 
-const alice = new Person('Alice', 25);
-alice.sayHello();
+obj.greeting()

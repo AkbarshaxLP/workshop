@@ -14,3 +14,4 @@ const a = "foo",
 const o = { a, b, c };
 
 console.log(o)
+// {a: 'foo', b: 42, c: {}}

@@ -1,5 +1,11 @@
-let numbers = [1, 2, 3, 4, 5];
-let sum = numbers.reduce((total, current) => {
-  return total + current
-});
-console.log(sum); // 15
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  sayHello() {
+    console.log(`Hello, ${this.name}`);
+  }
+}
+
+const alice = new Person('Alice', 25);
+alice.sayHello();

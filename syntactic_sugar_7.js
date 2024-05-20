@@ -17,3 +17,7 @@ class Person {
     console.log(`Hello, ${this.name}`);
   }
 }
+
+
+const alice = new Person('Alice', 25);
+alice.sayHello();

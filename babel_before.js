@@ -1,4 +1,4 @@
-// до после транспиляции (ES6)
+// до транспиляции (ES6)
 const greet = (name) => {
   return `Hello, ${name}!`;
 };

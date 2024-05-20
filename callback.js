@@ -8,10 +8,9 @@ function fetchData(url, callback) {
   fetch(url)
     .then(response => response.json())
     .then(data => callback(data))
-    .catch(error => console.error(error));
 }
 
-fetchData('https://api.example.com/data', function(data) {
+fetchData('https://jsonplaceholder.org/posts', function(data) {
   console.log(data);
 });
 
@@ -23,13 +22,8 @@ document.getElementById('myButton').addEventListener('click', function() {
 
 
 // 3.Асинхронный код с setTimeout:
-console.log('Start');
-
 setTimeout(function() {
   console.log('Inside callback');
 }, 2000);
-
-console.log('End');
-
 
 // Позволяет определять поведение после завершения определенных операций

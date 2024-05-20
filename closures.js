@@ -7,19 +7,6 @@
    в которой она была создана, даже если эта функция выполняется вне этой области.
 */
 
-
-// function makeFunc() {
-//   const name = "Mozilla";
-//   function displayName() {
-//     console.log(name);
-//   }
-//   return displayName;
-// }
-
-// const myFunc = makeFunc();
-// myFunc();
-
-
 function createCounter() {
   let count = 0;
   return function() {
